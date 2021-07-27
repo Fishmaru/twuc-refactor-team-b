@@ -32,11 +32,6 @@ class Customer {
         rentals.add(arg);
     }
 
-    String htmlStatement() {
-        //todo
-        return null;
-    }
-
     private double getTotalCharge() {
         return rentals.stream().mapToDouble(Rental::getCharge).sum();
     }
